@@ -11,3 +11,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - Upgrade the bundled Debezium S3 schema-history storage to 3.5.1.Final.
+- Fix the S3 schema history in GraalVM native images by including the AWS SDK `SdkHttpService` service file, which the SDK uses to find its HTTP client.
